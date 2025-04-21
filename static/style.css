@@ -1,0 +1,76 @@
+body {
+    min-height: 100vh;
+    /* Smooth animated radial gradient background */
+    background: radial-gradient(circle at 50% 50%, #e0e7ff, #f0f4f8 80%);
+    transition: background 1s;
+}
+
+label {
+    font-size: 16px;
+    color: #3a4dce;
+}
+
+label.form-label {
+    color: #0d6efd; /* Match Bootstrap btn-primary */
+    font-size: 16px;
+}
+
+/* Recommendations container styling */
+#recommendations {
+    background: rgba(255,255,255,0.85);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Profession form styling */
+#professionForm {
+    background: rgba(255,255,255,0.7);
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 2rem 1.5rem;
+}
+
+@media (max-width: 576px) {
+    #professionForm, #recommendations {
+        padding: 1rem;
+    }
+}
+
+/* Tool Info Pages Modern Boxy UI */
+.tool-box {
+    background: #f8fafc;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+    padding: 2.5rem 2rem;
+    max-width: 700px;
+    margin: 2rem auto;
+    border: 1.5px solid #e0e7ef;
+}
+.tool-section {
+    margin-bottom: 1.5rem;
+}
+.tool-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2563eb;
+}
+.tool-section ul {
+    padding-left: 1.2rem;
+}
+.tool-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.text-center.mt-4 .btn.btn-outline-secondary {
+    margin-top: 1rem;
+}
+@media (max-width: 768px) {
+    .tool-box {
+        padding: 1.2rem 0.5rem;
+    }
+}

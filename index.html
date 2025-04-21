@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Finder</title>
+    <link rel="icon" type="image/x-icon" href="logo/logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <img src="logo/logo.ico" alt="AI Tool Finder Logo" width="64" height="64">
+            <h1 class="display-5 fw-bold mt-2">AI Tool Finder</h1>
+            <p class="lead" style="color: #4f46e5; font-weight: 500;">
+                🚀 Unlock your potential! Instantly get the <b>top 5 AI tools</b> for your profession and boost your workflow. ✨
+            </p>
+        </div>
+        <div class="card shadow-lg border-0 mx-auto" style="max-width: 520px; background: linear-gradient(135deg, #f8fafc 80%, #e0e7ff 100%);">
+            <div class="card-body p-4">
+                <form id="professionForm">
+                    <div class="mb-3">
+                        <label for="profession" class="form-label" style="color: #4f46e5; font-weight: 600; font-size: 1.1rem;">
+                            🔍✨ Select your profession to reveal the best AI tools for you ⚡
+                        </label>
+                        <select class="form-select" id="profession" required>
+                            <option value="" disabled selected>👤 Select your profession</option>
+                            <option>Software Developer</option>
+                            <option>Data Scientist</option>
+                            <option>Graphic Designer</option>
+                            <option>Content Writer</option>
+                            <option>Digital Marketer</option>
+                            <option>Teacher</option>
+                            <option>Doctor</option>
+                            <option>Lawyer</option>
+                            <option>Accountant</option>
+                            <option>Engineer</option>
+                            <option>Product Manager</option>
+                            <option>HR Specialist</option>
+                            <option>Financial Analyst</option>
+                            <option>UX/UI Designer</option>
+                            <option>Researcher</option>
+                            <option>Sales Manager</option>
+                            <option>Customer Support</option>
+                            <option>Project Manager</option>
+                            <option>Business Analyst</option>
+                            <option>Entrepreneur</option>
+                            <option>Photographer</option>
+                            <option>Video Editor</option>
+                            <option>Translator</option>
+                            <option>Architect</option>
+                            <option>Consultant</option>
+                            <option>Social Media Manager</option>
+                            <option>SEO Specialist</option>
+                            <option>Copywriter</option>
+                            <option>Animator</option>
+                            <option>Game Developer</option>
+                            <option>Biologist</option>
+                            <option>Chemist</option>
+                            <option>Physicist</option>
+                            <option>Mathematician</option>
+                            <option>Statistician</option>
+                            <option>Economist</option>
+                            <option>Actuary</option>
+                            <option>Marine Biologist</option>
+                            <option>Geologist</option>
+                            <option>Urban Planner</option>
+                            <option>Event Planner</option>
+                            <option>Chef</option>
+                            <option>Nutritionist</option>
+                            <option>Fitness Trainer</option>
+                            <option>Psychologist</option>
+                            <option>Therapist</option>
+                            <option>Veterinarian</option>
+                            <option>Pharmacist</option>
+                            <option>Dentist</option>
+                            <option>Nurse</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" style="font-size: 1.1rem;">🤖 Find My AI Tools</button>
+                </form>
+            </div>
+        </div>
+        <div id="recommendations" class="mt-5"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>
