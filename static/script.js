@@ -109,7 +109,7 @@ const aiTools = {
     ],
     'UX/UI Designer': [
         { name: 'Uizard', desc: 'AI-powered UI design and prototyping.', link: 'tools/uizard.html' },
-        { name: 'Figma AI plugins', desc: 'AI plugins for Figma design tool.', link: 'tools/figma-ai.html' },
+        { name: 'Figma AI plugins', desc: 'AI plugins for Figma design tool.', link: 'tools/figma-ai-plugins.html' },
         { name: 'DALL·E', desc: 'AI image generation for creative design.', link: 'tools/dalle.html' },
         { name: 'Remove.bg', desc: 'AI background remover for design assets.', link: 'tools/remove-bg.html' },
         { name: 'Adobe Firefly', desc: 'AI generative art and design tools by Adobe.', link: 'tools/adobe-firefly.html' }
