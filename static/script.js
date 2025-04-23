@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const color2 = randomLightColor();
         document.body.style.background = `radial-gradient(circle at 50% 50%, ${color1}, ${color2} 80%)`;
     }
-    setInterval(setRandomGradient, 4000);
+    setInterval(setRandomGradient, 2000);
 });
 
 // AI tool recommendations by profession
