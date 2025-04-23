@@ -320,7 +320,7 @@ const aiTools = {
     'Fitness Trainer': [
         { name: 'Freeletics AI', desc: 'AI-powered fitness coaching and workouts.', link: 'tools/freeletics-ai.html' },
         { name: 'Fitbod AI', desc: 'AI workout planner and tracker.', link: 'tools/fitbod-ai.html' },
-        { name: 'Aaptiv Coach', desc: 'AI fitness and wellness coaching.', link: 'tools/aaptiv-coach.html' },
+        { name: 'Aaptiv Coach', desc: 'AI fitness and wellness coaching.', link: 'tools/aaptiv-coach-ai.html' },
         { name: 'Vi Trainer AI', desc: 'AI running and fitness assistant.', link: 'tools/vi-trainer-ai.html' },
         { name: 'ChatGPT', desc: 'Conversational AI for fitness advice.', link: 'tools/chatgpt.html' }
     ],
