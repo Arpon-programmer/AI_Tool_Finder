@@ -365,6 +365,111 @@ const aiTools = {
         { name: 'Care Angel', desc: 'AI health assistant for patient monitoring.', link: 'tools/care-angel.html' },
         { name: 'NurseLogic AI', desc: 'AI for nursing education and simulation.', link: 'tools/nurselogic-ai.html' },
         { name: 'ChatGPT', desc: 'Conversational AI for nursing Q&A.', link: 'tools/chatgpt.html' }
+    ],
+    'Student': [
+        { name: 'ChatGPT', desc: 'Conversational AI for homework help, explanations, and study support.', link: 'tools/chatgpt.html' },
+        { name: 'Grammarly', desc: 'AI grammar and writing assistant for essays and assignments.', link: 'tools/grammarly.html' },
+        { name: 'Quillionz', desc: 'AI tool for generating quiz questions and study materials.', link: 'tools/quillionz.html' },
+        { name: 'Otter.ai', desc: 'AI-powered transcription and note-taking for lectures.', link: 'tools/otter-ai.html' },
+        { name: 'Wolfram Alpha', desc: 'AI-powered computational engine for math and science problems.', link: 'tools/wolfram-alpha.html' }
+    ],
+    'Journalist': [
+        { name: 'ChatGPT', desc: 'Conversational AI for research, interview prep, and content drafting.', link: 'tools/chatgpt.html' },
+        { name: 'Grammarly', desc: 'AI grammar and style checker for articles and reports.', link: 'tools/grammarly.html' },
+        { name: 'Quillbot', desc: 'AI paraphrasing and summarization tool for rewriting and condensing news.', link: 'tools/quillbot.html' },
+        { name: 'Otter.ai', desc: 'AI-powered transcription for interviews and press conferences.', link: 'tools/otter-ai.html' },
+        { name: 'Primer AI', desc: 'AI for automated news summarization and real-time event monitoring.', link: 'tools/primer-ai.html' }
+    ],
+    'Music Producer': [
+        { name: 'AIVA', desc: 'AI music composition assistant for creating original scores and tracks.', link: 'tools/aiva.html' },
+        { name: 'LANDR', desc: 'AI-powered mastering and music distribution platform.', link: 'tools/landr.html' },
+        { name: 'Endlesss', desc: 'Collaborative AI-powered music creation and live jamming tool.', link: 'tools/endlesss.html' },
+        { name: 'Amper Music', desc: 'AI music generator for royalty-free tracks and soundscapes.', link: 'tools/amper-music.html' },
+        { name: 'Magenta Studio', desc: 'Google’s AI tools for music generation and creative workflows.', link: 'tools/magenta-studio.html' }
+    ],
+    'Fashion Designer': [
+        { name: 'Fashwell', desc: 'AI-powered visual search and trend analysis for fashion design.', link: 'tools/fashwell.html' },
+        { name: 'Vue.ai', desc: 'AI for product tagging, catalog management, and design inspiration.', link: 'tools/vue-ai.html' },
+        { name: 'Heuritech', desc: 'AI trend forecasting and consumer insights for fashion brands.', link: 'tools/heuritech.html' },
+        { name: 'Designify', desc: 'AI tool for automating fashion design visuals and mockups.', link: 'tools/designify.html' },
+        { name: 'CLO 3D', desc: 'AI-assisted 3D garment visualization and virtual prototyping.', link: 'tools/clo3d.html' }
+    ],
+    'Data Engineer': [
+        { name: 'DataRobot', desc: 'Automated machine learning and data pipeline management.', link: 'tools/datarobot.html' },
+        { name: 'Trifacta', desc: 'AI-powered data wrangling and preparation platform.', link: 'tools/trifacta.html' },
+        { name: 'Paxata', desc: 'AI-driven data integration and quality management.', link: 'tools/paxata.html' },
+        { name: 'Talend', desc: 'AI-enhanced data integration and ETL platform.', link: 'tools/talend.html' },
+        { name: 'Alteryx', desc: 'AI-powered analytics, data prep, and automation for engineers.', link: 'tools/alteryx.html' }
+    ],
+    'Supply Chain Manager': [
+        { name: 'Llamasoft', desc: 'AI-powered supply chain analytics and optimization platform.', link: 'tools/llamasoft.html' },
+        { name: 'o9 Solutions', desc: 'AI-driven supply chain planning and forecasting.', link: 'tools/o9-solutions.html' },
+        { name: 'Project44', desc: 'AI-powered supply chain visibility, real-time tracking, and predictive analytics.', link: 'tools/project44.html' },
+        { name: 'Kinaxis RapidResponse', desc: 'AI-enhanced supply chain management and scenario planning.', link: 'tools/kinaxis-rapidresponse.html' },
+        { name: 'Blue Yonder', desc: 'AI and ML for end-to-end supply chain optimization.', link: 'tools/blue-yonder.html' }
+    ],
+    'Real Estate Agent': [
+        { name: 'Zillow Premier Agent', desc: 'AI-powered real estate lead generation and CRM.', link: 'tools/zillow-premier-agent.html' },
+        { name: 'Revaluate', desc: 'AI for predicting real estate leads most likely to move.', link: 'tools/revaluate.html' },
+        { name: 'Rex', desc: 'AI-driven real estate marketing and transaction management.', link: 'tools/rex.html' },
+        { name: 'HouseCanary', desc: 'AI for property valuation and market analytics.', link: 'tools/housecanary.html' },
+        { name: 'Restb.ai', desc: 'AI image recognition for real estate listings.', link: 'tools/restb-ai.html' }
+    ],
+    'Customer Success Manager': [
+        { name: 'Gainsight', desc: 'AI-powered customer success platform for retention and growth.', link: 'tools/gainsight.html' },
+        { name: 'Totango', desc: 'AI-driven customer health scoring and engagement.', link: 'tools/totango.html' },
+        { name: 'ChurnZero', desc: 'AI for churn prediction and customer lifecycle management.', link: 'tools/churnzero.html' },
+        { name: 'Planhat', desc: 'AI-powered customer insights and workflow automation.', link: 'tools/planhat.html' },
+        { name: 'ClientSuccess', desc: 'AI tools for customer relationship management and analytics.', link: 'tools/clientsuccess.html' }
+    ],
+    'Operations Manager': [
+        { name: 'ProcessMaker', desc: 'AI-powered workflow automation and process management.', link: 'tools/processmaker.html' },
+        { name: 'Celonis', desc: 'AI-driven process mining and operational analytics.', link: 'tools/celonis.html' },
+        { name: 'UiPath', desc: 'AI and RPA for business process automation.', link: 'tools/uipath.html' },
+        { name: 'Kissflow', desc: 'AI-enhanced operations and workflow management.', link: 'tools/kissflow.html' },
+        { name: 'Workato', desc: 'AI-powered integration and automation platform.', link: 'tools/workato.html' }
+    ],
+    'Mechanical Engineer': [
+        { name: 'Ansys AI', desc: 'AI-powered simulation and engineering analysis.', link: 'tools/ansys-ai.html' },
+        { name: 'SimScale AI', desc: 'Cloud-based engineering simulation with AI.', link: 'tools/simscale-ai.html' },
+        { name: 'Autodesk Fusion 360 AI', desc: 'AI features for CAD and mechanical design.', link: 'tools/autodesk-fusion360-ai.html' },
+        { name: 'Altair HyperWorks AI', desc: 'AI-driven product design and optimization.', link: 'tools/altair-hyperworks-ai.html' },
+        { name: 'nTopology AI', desc: 'AI-powered generative design for engineering.', link: 'tools/ntopology-ai.html' }
+    ],
+    'Electrical Engineer': [
+        { name: 'Cadence Cerebrus', desc: 'AI-driven chip design and EDA automation.', link: 'tools/cadence-cerebrus.html' },
+        { name: 'Siemens EDA AI', desc: 'AI for electronic design automation and simulation.', link: 'tools/siemens-eda-ai.html' },
+        { name: 'Altium Designer AI', desc: 'AI features for PCB design and electronics.', link: 'tools/altium-designer-ai.html' },
+        { name: 'Keysight PathWave AI', desc: 'AI-powered test and measurement analytics.', link: 'tools/keysight-pathwave-ai.html' },
+        { name: 'Synopsys DSO.ai', desc: 'AI for semiconductor design and optimization.', link: 'tools/synopsys-dso-ai.html' }
+    ],
+    'Civil Engineer': [
+        { name: 'Bentley iTwin AI', desc: 'AI-powered infrastructure digital twins.', link: 'tools/bentley-itwin-ai.html' },
+        { name: 'Autodesk Civil 3D AI', desc: 'AI features for civil engineering design.', link: 'tools/autodesk-civil3d-ai.html' },
+        { name: 'Trimble SiteVision AI', desc: 'AI for construction site visualization.', link: 'tools/trimble-sitevision-ai.html' },
+        { name: 'CityFormLab AI', desc: 'AI for city data and planning.', link: 'tools/cityformlab-ai.html' },
+        { name: 'OpenRoads Designer AI', desc: 'AI-driven road and infrastructure design.', link: 'tools/openroads-designer-ai.html' }
+    ],
+    'Biomedical Engineer': [
+        { name: 'Deep Genomics', desc: 'AI for genetic medicine discovery.', link: 'tools/deep-genomics.html' },
+        { name: 'PathAI', desc: 'AI for pathology and disease detection.', link: 'tools/pathai.html' },
+        { name: 'Aidoc', desc: 'AI for medical imaging and radiology.', link: 'tools/aidoc.html' },
+        { name: 'Insilico Medicine', desc: 'AI for drug discovery and biology.', link: 'tools/insilico-medicine.html' },
+        { name: 'Atomwise', desc: 'AI-powered drug discovery platform.', link: 'tools/atomwise.html' }
+    ],
+    'Social Worker': [
+        { name: 'X2AI', desc: 'AI-powered mental health and support chatbots.', link: 'tools/x2ai.html' },
+        { name: 'Woebot', desc: 'AI-powered mental health chatbot.', link: 'tools/woebot.html' },
+        { name: 'Wysa', desc: 'AI mental health support and self-care.', link: 'tools/wysa.html' },
+        { name: 'Tess AI', desc: 'AI for psychological support and therapy.', link: 'tools/tess-ai.html' },
+        { name: 'Talkspace AI', desc: 'AI-enhanced online therapy and support.', link: 'tools/talkspace-ai.html' }
+    ],
+    'Librarian': [
+        { name: 'Yewno Discover', desc: 'AI-powered knowledge discovery for libraries.', link: 'tools/yewno-discover.html' },
+        { name: 'Ex Libris Alma AI', desc: 'AI features for library management.', link: 'tools/exlibris-alma-ai.html' },
+        { name: 'Clarivate Web of Science AI', desc: 'AI-powered research discovery and analytics.', link: 'tools/clarivate-webofscience-ai.html' },
+        { name: 'Semantic Scholar AI', desc: 'AI-powered academic search engine.', link: 'tools/semantic-scholar.html' },
+        { name: 'OCLC Wise AI', desc: 'AI-driven library engagement and analytics.', link: 'tools/oclc-wise-ai.html' }
     ]
 };
 
