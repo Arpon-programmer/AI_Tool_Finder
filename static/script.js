@@ -466,8 +466,8 @@ const aiTools = {
     ],
     'Librarian': [
         { name: 'Yewno Discover', desc: 'AI-powered knowledge discovery for libraries.', link: 'tools/yewno-discover.html' },
-        { name: 'Ex Libris Alma AI', desc: 'AI features for library management.', link: 'tools/exlibris-alma-ai.html' },
-        { name: 'Clarivate Web of Science AI', desc: 'AI-powered research discovery and analytics.', link: 'tools/clarivate-webofscience-ai.html' },
+        { name: 'Ex Libris Alma AI', desc: 'AI features for library management.', link: 'tools/ex-libris-alma-ai.html' },
+        { name: 'Clarivate Web of Science AI', desc: 'AI-powered research discovery and analytics.', link: 'tools/clarivate-web-of-science-ai.html' },
         { name: 'Semantic Scholar AI', desc: 'AI-powered academic search engine.', link: 'tools/semantic-scholar.html' },
         { name: 'OCLC Wise AI', desc: 'AI-driven library engagement and analytics.', link: 'tools/oclc-wise-ai.html' }
     ]
