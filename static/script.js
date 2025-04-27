@@ -470,6 +470,48 @@ const aiTools = {
         { name: 'Clarivate Web of Science AI', desc: 'AI-powered research discovery and analytics.', link: 'tools/clarivate-web-of-science-ai.html' },
         { name: 'Semantic Scholar AI', desc: 'AI-powered academic search engine.', link: 'tools/semantic-scholar.html' },
         { name: 'OCLC Wise AI', desc: 'AI-driven library engagement and analytics.', link: 'tools/oclc-wise-ai.html' }
+    ],
+    'Museum Curator': [
+        { name: 'CollectiveAccess AI', desc: 'Collection management and cataloging with AI-driven metadata.', link: 'tools/collectiveaccess-ai.html' },
+        { name: 'MuseumPlus AI', desc: 'AI-powered museum information and workflow management.', link: 'tools/museumplus-ai.html' },
+        { name: 'Articheck AI', desc: 'AI for condition reporting and conservation documentation.', link: 'tools/articheck-ai.html' },
+        { name: 'Smartify', desc: 'AI-powered digital guides and visitor engagement for museums.', link: 'tools/smartify.html' },
+        { name: 'Cuseum AI', desc: 'AI for digital membership, engagement, and AR experiences.', link: 'tools/cuseum-ai.html' }
+    ],
+    'Policy Analyst': [
+        { name: 'Quorum AI', desc: 'AI-powered legislative tracking and policy analysis.', link: 'tools/quorum-ai.html' },
+        { name: 'PolicyMap AI', desc: 'AI-driven data mapping and policy research.', link: 'tools/policymap-ai.html' },
+        { name: 'FiscalNote AI', desc: 'AI for government relations and policy monitoring.', link: 'tools/fiscalnote-ai.html' },
+        { name: 'Elicit', desc: 'AI research assistant for literature review and evidence synthesis.', link: 'tools/elicit.html' },
+        { name: 'Polis AI', desc: 'AI for public opinion analysis and policy feedback.', link: 'tools/polis-ai.html' }
+    ],
+    'Public Relations Specialist': [
+        { name: 'PRophet AI', desc: 'AI-driven media outreach and pitch prediction.', link: 'tools/prophet-ai.html' },
+        { name: 'Signal AI', desc: 'AI-powered media monitoring and reputation management.', link: 'tools/signal-ai.html' },
+        { name: 'Meltwater AI', desc: 'AI for social listening and PR analytics.', link: 'tools/meltwater-ai.html' },
+        { name: 'Onclusive AI', desc: 'AI-driven PR performance measurement and insights.', link: 'tools/onclusive-ai.html' },
+        { name: 'Lately AI', desc: 'AI-powered social media content generator for PR.', link: 'tools/lately-ai.html' }
+    ],
+    'Insurance Agent': [
+        { name: 'Lemonade AI', desc: 'AI-powered insurance underwriting and claims.', link: 'tools/lemonade-ai.html' },
+        { name: 'Shift Technology AI', desc: 'AI for insurance fraud detection and claims automation.', link: 'tools/shift-technology-ai.html' },
+        { name: 'Planck AI', desc: 'AI-driven commercial insurance data and risk analysis.', link: 'tools/planck-ai.html' },
+        { name: 'Akur8', desc: 'AI-powered insurance pricing and actuarial modeling.', link: 'tools/akur8.html' },
+        { name: 'Emblem AI', desc: 'AI for actuarial risk modeling and insurance analytics.', link: 'tools/emblem-ai.html' }
+    ],
+    'Retail Manager': [
+        { name: 'Afresh AI', desc: 'AI for fresh food inventory and waste reduction.', link: 'tools/afresh-ai.html' },
+        { name: 'Focal Systems AI', desc: 'AI-powered shelf monitoring and retail automation.', link: 'tools/focal-systems-ai.html' },
+        { name: 'Standard AI', desc: 'AI for autonomous checkout and retail analytics.', link: 'tools/standard-ai.html' },
+        { name: 'Vue.ai', desc: 'AI for product tagging, personalization, and retail automation.', link: 'tools/vue-ai.html' },
+        { name: 'Blue Yonder', desc: 'AI and ML for end-to-end retail supply chain optimization.', link: 'tools/blue-yonder.html' }
+    ],
+    'Logistics Coordinator': [
+        { name: 'FourKites AI', desc: 'AI-powered supply chain visibility and predictive tracking.', link: 'tools/fourkites-ai.html' },
+        { name: 'Project44', desc: 'AI-powered supply chain visibility and analytics.', link: 'tools/project44.html' },
+        { name: 'Llamasoft', desc: 'AI-powered supply chain analytics and optimization.', link: 'tools/llamasoft.html' },
+        { name: 'Shipwell AI', desc: 'AI for freight management and logistics automation.', link: 'tools/shipwell-ai.html' },
+        { name: 'Flexport AI', desc: 'AI-driven supply chain management and logistics optimization.', link: 'tools/flexport-ai.html' }
     ]
 };
 
