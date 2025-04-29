@@ -1,3 +1,26 @@
+// Firebase Analytics integration
+// Remove ES module imports for Firebase Analytics
+// Use global window.firebaseAnalytics and window.firebaseApp set in index.html
+
+let analytics;
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.firebaseApp && window.firebaseAnalytics) {
+        analytics = window.firebaseAnalytics;
+        // Log user engagement event
+        if (typeof firebase !== 'undefined' && typeof firebase.analytics !== 'undefined') {
+            // Defensive: for older Firebase versions
+            firebase.analytics();
+        }
+        if (typeof analytics !== 'undefined') {
+            if (typeof logEvent !== 'undefined') {
+                logEvent(analytics, 'user_engagement');
+            } else if (typeof analytics.logEvent === 'function') {
+                analytics.logEvent('user_engagement');
+            }
+        }
+    }
+});
+
 // Animated background color transitions
 document.addEventListener('DOMContentLoaded', () => {
     function randomLightColor() {
@@ -522,16 +545,37 @@ const recommendationsDiv = document.getElementById('recommendations');
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     const profession = document.getElementById('profession').value;
+    // Log profession selection to Firebase Analytics
+    if (analytics) {
+        if (typeof logEvent !== 'undefined') {
+            logEvent(analytics, 'profession_selected', { profession: profession });
+        } else if (typeof analytics.logEvent === 'function') {
+            analytics.logEvent('profession_selected', { profession: profession });
+        }
+    }
     const tools = aiTools[profession];
     let html = `<h3 class='mb-4'>Recommended AI Tools for <span class='text-primary'>${profession}</span></h3>`;
     html += '<ul class="list-group">';
     tools.forEach(tool => {
         html += `<li class='list-group-item'>
-            <strong><a href='${tool.link}' target='_blank' rel='noopener'>${tool.name}</a></strong><br>
+            <strong><a href='${tool.link}' target='_blank' rel='noopener' class='tool-link' data-tool='${tool.name}'>${tool.name}</a></strong><br>
             <span class='text-muted small'>${tool.desc}</span>
         </li>`;
     });
     html += '</ul>';
     recommendationsDiv.innerHTML = html;
     recommendationsDiv.scrollIntoView({ behavior: 'smooth' });
+
+    // Add click event listeners for tool links
+    document.querySelectorAll('.tool-link').forEach(link => {
+        link.addEventListener('click', function() {
+            if (analytics) {
+                if (typeof logEvent !== 'undefined') {
+                    logEvent(analytics, 'tool_click', { tool_name: this.dataset.tool, profession: profession });
+                } else if (typeof analytics.logEvent === 'function') {
+                    analytics.logEvent('tool_click', { tool_name: this.dataset.tool, profession: profession });
+                }
+            }
+        });
+    });
 });
