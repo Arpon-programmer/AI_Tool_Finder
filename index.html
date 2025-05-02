@@ -1,116 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tool Finder</title>
+    <title>AI Tool Finder - Discover the Best AI Tools for Your Profession</title>
+    <meta name="description" content="Instantly discover the top 5 AI tools tailored for your profession. Boost your workflow and productivity with AI Tool Finder.">
+    <meta name="keywords" content="AI tools, profession, productivity, artificial intelligence, tool finder, best AI tools">
+    <meta name="author" content="Arpon Biswas">
     <link rel="icon" type="image/x-icon" href="logo/logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
 </head>
-
 <body>
-    <div class="container py-5">
-        <div class="text-center mb-4">
-            <img src="logo/logo.ico" alt="AI Tool Finder Logo" width="64" height="64">
-            <h1 class="display-5 fw-bold mt-2">AI Tool Finder</h1>
-            <p class="lead" style="color: #4f46e5; font-weight: 500;">
-                🚀 Unlock your potential! Instantly get the <b>top 5 AI tools</b> for your profession and boost your
-                workflow. ✨
+    <header class="text-center mb-4 pt-4">
+        <img src="logo/logo.ico" alt="AI Tool Finder Logo" width="64" height="64">
+        <h1 class="display-5 fw-bold mt-2">AI Tool Finder</h1>
+        <p class="lead" style="color: #4f46e5; font-weight: 500;">
+            🚀 Unlock your potential! Instantly get the <strong>top 5 AI tools</strong> for your profession and boost your workflow. ✨
+        </p>
+    </header>
+    <main>
+        <section aria-labelledby="profession-select-title">
+            <div class="container">
+                <div class="card shadow-lg border-0 mx-auto" style="max-width: 520px; background: linear-gradient(135deg, #f8fafc 80%, #e0e7ff 100%);">
+                    <div class="card-body p-4">
+                        <form id="professionForm">
+                            <div class="mb-3">
+                                <label id="profession-select-title" for="profession" class="form-label" style="color: #4f46e5; font-weight: 600; font-size: 1.1rem;">
+                                    🔍✨ Select your profession to reveal the best AI tools for you ⚡
+                                </label>
+                                <select class="form-select" id="profession" name="profession" required aria-required="true">
+                                    <option value="" disabled selected>👤 Select your profession</option>
+                                    <option>Accountant</option>
+                                    <option>Actuary</option>
+                                    <option>Animator</option>
+                                    <option>Architect</option>
+                                    <option>Biologist</option>
+                                    <option>Biomedical Engineer</option>
+                                    <option>Business Analyst</option>
+                                    <option>Chef</option>
+                                    <option>Chemist</option>
+                                    <option>Civil Engineer</option>
+                                    <option>Consultant</option>
+                                    <option>Content Writer</option>
+                                    <option>Copywriter</option>
+                                    <option>Customer Success Manager</option>
+                                    <option>Customer Support</option>
+                                    <option>Data Engineer</option>
+                                    <option>Data Scientist</option>
+                                    <option>Dentist</option>
+                                    <option>Digital Marketer</option>
+                                    <option>Doctor</option>
+                                    <option>Economist</option>
+                                    <option>Electrical Engineer</option>
+                                    <option>Engineer</option>
+                                    <option>Entrepreneur</option>
+                                    <option>Event Planner</option>
+                                    <option>Fashion Designer</option>
+                                    <option>Financial Analyst</option>
+                                    <option>Fitness Trainer</option>
+                                    <option>Game Developer</option>
+                                    <option>Geologist</option>
+                                    <option>Graphic Designer</option>
+                                    <option>HR Specialist</option>
+                                    <option>Insurance Agent</option>
+                                    <option>Journalist</option>
+                                    <option>Librarian</option>
+                                    <option>Lawyer</option>
+                                    <option>Logistics Coordinator</option>
+                                    <option>Marine Biologist</option>
+                                    <option>Mathematician</option>
+                                    <option>Mechanical Engineer</option>
+                                    <option>Music Producer</option>
+                                    <option>Museum Curator</option>
+                                    <option>Nutritionist</option>
+                                    <option>Nurse</option>
+                                    <option>Operations Manager</option>
+                                    <option>Pharmacist</option>
+                                    <option>Photographer</option>
+                                    <option>Physicist</option>
+                                    <option>Policy Analyst</option>
+                                    <option>Product Manager</option>
+                                    <option>Project Manager</option>
+                                    <option>Psychologist</option>
+                                    <option>Public Relations Specialist</option>
+                                    <option>Real Estate Agent</option>
+                                    <option>Researcher</option>
+                                    <option>Retail Manager</option>
+                                    <option>Sales Manager</option>
+                                    <option>SEO Specialist</option>
+                                    <option>Social Media Manager</option>
+                                    <option>Social Worker</option>
+                                    <option>Software Developer</option>
+                                    <option>Statistician</option>
+                                    <option>Student</option>
+                                    <option>Supply Chain Manager</option>
+                                    <option>Teacher</option>
+                                    <option>Therapist</option>
+                                    <option>Translator</option>
+                                    <option>UX/UI Designer</option>
+                                    <option>Urban Planner</option>
+                                    <option>Veterinarian</option>
+                                    <option>Video Editor</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" style="font-size: 1.1rem;">🤖 Find My AI Tools</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="recommendations" class="mt-5" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-custom text-center mt-5">
+        <div class="container">
+            <p class="mb-1 copyright-text">
+                &copy; 2025 AI Tool Finder. All rights reserved.
+            </p>
+            <p class="mb-1 footer-info">
+                Built by Arpon Biswas. This site helps you discover the best AI tools for your profession.<br>
+                Data is for informational purposes only. For feedback or suggestions, contact
+                <a href="mailto:arponb966@gmail.com">arponb966@gmail.com</a>.
+            </p>
+            <p class="footer-note">
+                Icons &amp; logos are property of their respective owners. Powered by Firebase &amp; Bootstrap.
             </p>
         </div>
-        <div class="card shadow-lg border-0 mx-auto"
-            style="max-width: 520px; background: linear-gradient(135deg, #f8fafc 80%, #e0e7ff 100%);">
-            <div class="card-body p-4">
-                <form id="professionForm">
-                    <div class="mb-3">
-                        <label for="profession" class="form-label"
-                            style="color: #4f46e5; font-weight: 600; font-size: 1.1rem;">
-                            🔍✨ Select your profession to reveal the best AI tools for you ⚡
-                        </label>
-                        <select class="form-select" id="profession" required>
-                            <option value="" disabled selected>👤 Select your profession</option>
-                            <option>Accountant</option>
-                            <option>Actuary</option>
-                            <option>Animator</option>
-                            <option>Architect</option>
-                            <option>Biologist</option>
-                            <option>Biomedical Engineer</option>
-                            <option>Business Analyst</option>
-                            <option>Chef</option>
-                            <option>Chemist</option>
-                            <option>Civil Engineer</option>
-                            <option>Consultant</option>
-                            <option>Content Writer</option>
-                            <option>Copywriter</option>
-                            <option>Customer Success Manager</option>
-                            <option>Customer Support</option>
-                            <option>Data Engineer</option>
-                            <option>Data Scientist</option>
-                            <option>Dentist</option>
-                            <option>Digital Marketer</option>
-                            <option>Doctor</option>
-                            <option>Economist</option>
-                            <option>Electrical Engineer</option>
-                            <option>Engineer</option>
-                            <option>Entrepreneur</option>
-                            <option>Event Planner</option>
-                            <option>Fashion Designer</option>
-                            <option>Financial Analyst</option>
-                            <option>Fitness Trainer</option>
-                            <option>Game Developer</option>
-                            <option>Geologist</option>
-                            <option>Graphic Designer</option>
-                            <option>HR Specialist</option>
-                            <option>Insurance Agent</option>
-                            <option>Journalist</option>
-                            <option>Librarian</option>
-                            <option>Lawyer</option>
-                            <option>Logistics Coordinator</option>
-                            <option>Marine Biologist</option>
-                            <option>Mathematician</option>
-                            <option>Mechanical Engineer</option>
-                            <option>Music Producer</option>
-                            <option>Museum Curator</option>
-                            <option>Nutritionist</option>
-                            <option>Nurse</option>
-                            <option>Operations Manager</option>
-                            <option>Pharmacist</option>
-                            <option>Photographer</option>
-                            <option>Physicist</option>
-                            <option>Policy Analyst</option>
-                            <option>Product Manager</option>
-                            <option>Project Manager</option>
-                            <option>Psychologist</option>
-                            <option>Public Relations Specialist</option>
-                            <option>Real Estate Agent</option>
-                            <option>Researcher</option>
-                            <option>Retail Manager</option>
-                            <option>Sales Manager</option>
-                            <option>SEO Specialist</option>
-                            <option>Social Media Manager</option>
-                            <option>Social Worker</option>
-                            <option>Software Developer</option>
-                            <option>Statistician</option>
-                            <option>Student</option>
-                            <option>Supply Chain Manager</option>
-                            <option>Teacher</option>
-                            <option>Therapist</option>
-                            <option>Translator</option>
-                            <option>UX/UI Designer</option>
-                            <option>Urban Planner</option>
-                            <option>Veterinarian</option>
-                            <option>Video Editor</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100" style="font-size: 1.1rem;">🤖 Find My AI
-                        Tools</button>
-                </form>
-            </div>
-        </div>
-        <div id="recommendations" class="mt-5"></div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module">
       // Import the functions you need from the SDKs you need
@@ -140,5 +156,4 @@
     </script>
     <script src="static/script.js"></script>
 </body>
-
 </html>
